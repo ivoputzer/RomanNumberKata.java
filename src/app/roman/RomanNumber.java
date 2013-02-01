@@ -30,7 +30,7 @@ public class RomanNumber
 	{
 		if ( literal.equalsIgnoreCase("n") ) return 0; // lets save some memory here
 				
-		//if ( !RomanNumber.validate( literal ) ) throw new RuntimeException("The string is not a valid roman number!");
+		if ( !RomanNumber.validate( literal ) ) throw new RuntimeException("The string is not a valid roman number!");
 
 		int number = 0;
 
